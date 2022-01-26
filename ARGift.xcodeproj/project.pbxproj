@@ -12,6 +12,36 @@
 		5F08FD5C279D9E05004A5FD6 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD5B279D9E05004A5FD6 /* Experience.rcproject */; };
 		5F08FD5E279D9E06004A5FD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F08FD5D279D9E06004A5FD6 /* Assets.xcassets */; };
 		5F08FD61279D9E06004A5FD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F08FD60279D9E06004A5FD6 /* Preview Assets.xcassets */; };
+		5F08FD68279D9EC9004A5FD6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD67279D9EC9004A5FD6 /* HomeView.swift */; };
+		5F08FD6A279D9F2C004A5FD6 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD69279D9F2C004A5FD6 /* SelectView.swift */; };
+		5F08FD6D279DA0F5004A5FD6 /* Markerlmage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD6C279DA0F5004A5FD6 /* Markerlmage.swift */; };
+		5F08FD6F279DA113004A5FD6 /* SelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD6E279DA113004A5FD6 /* SelectViewModel.swift */; };
+		5F08FD73279DAAE5004A5FD6 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD72279DAAE5004A5FD6 /* Activity.swift */; };
+		5F08FD75279DAE53004A5FD6 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD74279DAE53004A5FD6 /* EditView.swift */; };
+		5F08FD77279DB194004A5FD6 /* DrawPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD76279DB194004A5FD6 /* DrawPoints.swift */; };
+		5F08FD79279DB1E0004A5FD6 /* DrawPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD78279DB1E0004A5FD6 /* DrawPathView.swift */; };
+		5F4B63A727A127B600B42B75 /* AuthentiacationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63A627A127B600B42B75 /* AuthentiacationView.swift */; };
+		5F4B63AA27A1286D00B42B75 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63A927A1286D00B42B75 /* AuthenticationViewModel.swift */; };
+		5F4B63AC27A128CE00B42B75 /* OrangeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63AB27A128CE00B42B75 /* OrangeButton.swift */; };
+		5F4B63AF27A12D8700B42B75 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 5F4B63AE27A12D8700B42B75 /* Realm */; };
+		5F4B63B127A12D8700B42B75 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5F4B63B027A12D8700B42B75 /* RealmSwift */; };
+		5F4B63B727A12F0C00B42B75 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B63B327A12F0B00B42B75 /* toy_biplane.usdz */; };
+		5F4B63B827A12F0C00B42B75 /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B63B427A12F0B00B42B75 /* tv_retro.usdz */; };
+		5F4B63B927A12F0C00B42B75 /* LemonMeringuePie.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B63B527A12F0C00B42B75 /* LemonMeringuePie.usdz */; };
+		5F4B63BA27A12F0C00B42B75 /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B63B627A12F0C00B42B75 /* toy_drummer.usdz */; };
+		5F4B63BC27A13AB600B42B75 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63BB27A13AB600B42B75 /* PreviewView.swift */; };
+		5F4B63BE27A13DAA00B42B75 /* PinkButtonSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63BD27A13DAA00B42B75 /* PinkButtonSmall.swift */; };
+		5F4B63C227A1453C00B42B75 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63C127A1453C00B42B75 /* DataBase.swift */; };
+		5F4B63C427A151BB00B42B75 /* ARMarkerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63C327A151BB00B42B75 /* ARMarkerStore.swift */; };
+		5F4B63C727A158EA00B42B75 /* EditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63C627A158EA00B42B75 /* EditViewModel.swift */; };
+		5F4B63CC27A16B2500B42B75 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63CB27A16B2500B42B75 /* PreviewViewController.swift */; };
+		5F4B63CE27A1952700B42B75 /* RegistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63CD27A1952700B42B75 /* RegistView.swift */; };
+		5F4B63D427A199BF00B42B75 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63D327A199BF00B42B75 /* MarkerView.swift */; };
+		5F4B63D727A19A5B00B42B75 /* CompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63D627A19A5B00B42B75 /* CompleteView.swift */; };
+		5F4B63DA27A19D0E00B42B75 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63D927A19D0E00B42B75 /* TransitionManager.swift */; };
+		5FB3589D27A111B700E75F6E /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB3589C27A111B700E75F6E /* Color.xcassets */; };
+		5FB358A027A1129A00E75F6E /* PinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB3589F27A1129A00E75F6E /* PinkButton.swift */; };
+		5FB358A227A1176300E75F6E /* PrinterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB358A127A1176300E75F6E /* PrinterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +51,35 @@
 		5F08FD5B279D9E05004A5FD6 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		5F08FD5D279D9E06004A5FD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F08FD60279D9E06004A5FD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5F08FD67279D9EC9004A5FD6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5F08FD69279D9F2C004A5FD6 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
+		5F08FD6C279DA0F5004A5FD6 /* Markerlmage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markerlmage.swift; sourceTree = "<group>"; };
+		5F08FD6E279DA113004A5FD6 /* SelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewModel.swift; sourceTree = "<group>"; };
+		5F08FD72279DAAE5004A5FD6 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		5F08FD74279DAE53004A5FD6 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		5F08FD76279DB194004A5FD6 /* DrawPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPoints.swift; sourceTree = "<group>"; };
+		5F08FD78279DB1E0004A5FD6 /* DrawPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPathView.swift; sourceTree = "<group>"; };
+		5F4B63A627A127B600B42B75 /* AuthentiacationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentiacationView.swift; sourceTree = "<group>"; };
+		5F4B63A927A1286D00B42B75 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		5F4B63AB27A128CE00B42B75 /* OrangeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeButton.swift; sourceTree = "<group>"; };
+		5F4B63B327A12F0B00B42B75 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		5F4B63B427A12F0B00B42B75 /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
+		5F4B63B527A12F0C00B42B75 /* LemonMeringuePie.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = LemonMeringuePie.usdz; sourceTree = "<group>"; };
+		5F4B63B627A12F0C00B42B75 /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
+		5F4B63BB27A13AB600B42B75 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		5F4B63BD27A13DAA00B42B75 /* PinkButtonSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkButtonSmall.swift; sourceTree = "<group>"; };
+		5F4B63C127A1453C00B42B75 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		5F4B63C327A151BB00B42B75 /* ARMarkerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMarkerStore.swift; sourceTree = "<group>"; };
+		5F4B63C627A158EA00B42B75 /* EditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewModel.swift; sourceTree = "<group>"; };
+		5F4B63C827A15D3300B42B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5F4B63CB27A16B2500B42B75 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		5F4B63CD27A1952700B42B75 /* RegistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistView.swift; sourceTree = "<group>"; };
+		5F4B63D327A199BF00B42B75 /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		5F4B63D627A19A5B00B42B75 /* CompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteView.swift; sourceTree = "<group>"; };
+		5F4B63D927A19D0E00B42B75 /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		5FB3589C27A111B700E75F6E /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		5FB3589F27A1129A00E75F6E /* PinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkButton.swift; sourceTree = "<group>"; };
+		5FB358A127A1176300E75F6E /* PrinterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4B63B127A12D8700B42B75 /* RealmSwift in Frameworks */,
+				5F4B63AF27A12D8700B42B75 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +98,9 @@
 		5F08FD4B279D9E05004A5FD6 = {
 			isa = PBXGroup;
 			children = (
+				5FB3589C27A111B700E75F6E /* Color.xcassets */,
+				5F08FD78279DB1E0004A5FD6 /* DrawPathView.swift */,
+				5F08FD76279DB194004A5FD6 /* DrawPoints.swift */,
 				5F08FD56279D9E05004A5FD6 /* ARGift */,
 				5F08FD55279D9E05004A5FD6 /* Products */,
 			);
@@ -53,6 +117,10 @@
 		5F08FD56279D9E05004A5FD6 /* ARGift */ = {
 			isa = PBXGroup;
 			children = (
+				5F4B63C827A15D3300B42B75 /* Info.plist */,
+				5F4B63C027A1452100B42B75 /* DataBase */,
+				5F4B63B227A12EF700B42B75 /* USDZ */,
+				5FB358A327A125AD00E75F6E /* View */,
 				5F08FD57279D9E05004A5FD6 /* AppDelegate.swift */,
 				5F08FD59279D9E05004A5FD6 /* ContentView.swift */,
 				5F08FD5B279D9E05004A5FD6 /* Experience.rcproject */,
@@ -68,6 +136,140 @@
 				5F08FD60279D9E06004A5FD6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5F08FD6B279DA082004A5FD6 /* Select */ = {
+			isa = PBXGroup;
+			children = (
+				5F08FD69279D9F2C004A5FD6 /* SelectView.swift */,
+				5F08FD6C279DA0F5004A5FD6 /* Markerlmage.swift */,
+				5F08FD6E279DA113004A5FD6 /* SelectViewModel.swift */,
+			);
+			path = Select;
+			sourceTree = "<group>";
+		};
+		5F4B63A827A1285000B42B75 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B63A627A127B600B42B75 /* AuthentiacationView.swift */,
+				5F4B63A927A1286D00B42B75 /* AuthenticationViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		5F4B63B227A12EF700B42B75 /* USDZ */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B63B527A12F0C00B42B75 /* LemonMeringuePie.usdz */,
+				5F4B63B327A12F0B00B42B75 /* toy_biplane.usdz */,
+				5F4B63B627A12F0C00B42B75 /* toy_drummer.usdz */,
+				5F4B63B427A12F0B00B42B75 /* tv_retro.usdz */,
+			);
+			path = USDZ;
+			sourceTree = "<group>";
+		};
+		5F4B63BF27A1414300B42B75 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B63BB27A13AB600B42B75 /* PreviewView.swift */,
+				5F4B63CB27A16B2500B42B75 /* PreviewViewController.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		5F4B63C027A1452100B42B75 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B63C127A1453C00B42B75 /* DataBase.swift */,
+			);
+			name = DataBase;
+			sourceTree = "<group>";
+		};
+		5F4B63C527A158DB00B42B75 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B63BF27A1414300B42B75 /* Preview */,
+				5F08FD74279DAE53004A5FD6 /* EditView.swift */,
+				5F4B63C627A158EA00B42B75 /* EditViewModel.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		5F4B63CF27A1996900B42B75 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5F08FD67279D9EC9004A5FD6 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5F4B63D027A1997200B42B75 /* Printer */ = {
+			isa = PBXGroup;
+			children = (
+				5FB358A127A1176300E75F6E /* PrinterView.swift */,
+			);
+			path = Printer;
+			sourceTree = "<group>";
+		};
+		5F4B63D127A1997F00B42B75 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B63CD27A1952700B42B75 /* RegistView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		5F4B63D227A199A700B42B75 /* Marker */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B63D327A199BF00B42B75 /* MarkerView.swift */,
+			);
+			path = Marker;
+			sourceTree = "<group>";
+		};
+		5F4B63D527A19A4000B42B75 /* Complete */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B63D627A19A5B00B42B75 /* CompleteView.swift */,
+			);
+			path = Complete;
+			sourceTree = "<group>";
+		};
+		5F4B63D827A19BA600B42B75 /* Give */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B63D527A19A4000B42B75 /* Complete */,
+				5F4B63D227A199A700B42B75 /* Marker */,
+				5F4B63D127A1997F00B42B75 /* Register */,
+				5F4B63D027A1997200B42B75 /* Printer */,
+				5F4B63C527A158DB00B42B75 /* Edit */,
+				5F4B63A827A1285000B42B75 /* Authentication */,
+				5F08FD6B279DA082004A5FD6 /* Select */,
+				5F4B63C327A151BB00B42B75 /* ARMarkerStore.swift */,
+			);
+			path = Give;
+			sourceTree = "<group>";
+		};
+		5FB3589E27A1126C00E75F6E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5F08FD72279DAAE5004A5FD6 /* Activity.swift */,
+				5FB3589F27A1129A00E75F6E /* PinkButton.swift */,
+				5F4B63AB27A128CE00B42B75 /* OrangeButton.swift */,
+				5F4B63BD27A13DAA00B42B75 /* PinkButtonSmall.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5FB358A327A125AD00E75F6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FB3589E27A1126C00E75F6E /* Components */,
+				5F4B63CF27A1996900B42B75 /* Home */,
+				5F4B63D827A19BA600B42B75 /* Give */,
+				5F4B63D927A19D0E00B42B75 /* TransitionManager.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +288,10 @@
 			dependencies = (
 			);
 			name = ARGift;
+			packageProductDependencies = (
+				5F4B63AE27A12D8700B42B75 /* Realm */,
+				5F4B63B027A12D8700B42B75 /* RealmSwift */,
+			);
 			productName = ARGift;
 			productReference = 5F08FD54279D9E05004A5FD6 /* ARGift.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +320,9 @@
 				Base,
 			);
 			mainGroup = 5F08FD4B279D9E05004A5FD6;
+			packageReferences = (
+				5F4B63AD27A12D8700B42B75 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 5F08FD55279D9E05004A5FD6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,6 +339,11 @@
 			files = (
 				5F08FD61279D9E06004A5FD6 /* Preview Assets.xcassets in Resources */,
 				5F08FD5E279D9E06004A5FD6 /* Assets.xcassets in Resources */,
+				5F4B63BA27A12F0C00B42B75 /* toy_drummer.usdz in Resources */,
+				5F4B63B927A12F0C00B42B75 /* LemonMeringuePie.usdz in Resources */,
+				5F4B63B727A12F0C00B42B75 /* toy_biplane.usdz in Resources */,
+				5F4B63B827A12F0C00B42B75 /* tv_retro.usdz in Resources */,
+				5FB3589D27A111B700E75F6E /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +354,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4B63C727A158EA00B42B75 /* EditViewModel.swift in Sources */,
+				5F4B63C227A1453C00B42B75 /* DataBase.swift in Sources */,
+				5F4B63CE27A1952700B42B75 /* RegistView.swift in Sources */,
+				5F4B63A727A127B600B42B75 /* AuthentiacationView.swift in Sources */,
+				5F4B63BE27A13DAA00B42B75 /* PinkButtonSmall.swift in Sources */,
+				5F08FD6A279D9F2C004A5FD6 /* SelectView.swift in Sources */,
 				5F08FD5A279D9E05004A5FD6 /* ContentView.swift in Sources */,
+				5F08FD6D279DA0F5004A5FD6 /* Markerlmage.swift in Sources */,
+				5FB358A027A1129A00E75F6E /* PinkButton.swift in Sources */,
+				5F4B63AC27A128CE00B42B75 /* OrangeButton.swift in Sources */,
+				5F08FD79279DB1E0004A5FD6 /* DrawPathView.swift in Sources */,
+				5F4B63AA27A1286D00B42B75 /* AuthenticationViewModel.swift in Sources */,
+				5F4B63CC27A16B2500B42B75 /* PreviewViewController.swift in Sources */,
+				5F08FD68279D9EC9004A5FD6 /* HomeView.swift in Sources */,
+				5F08FD6F279DA113004A5FD6 /* SelectViewModel.swift in Sources */,
+				5F08FD73279DAAE5004A5FD6 /* Activity.swift in Sources */,
+				5F4B63DA27A19D0E00B42B75 /* TransitionManager.swift in Sources */,
+				5F4B63D427A199BF00B42B75 /* MarkerView.swift in Sources */,
 				5F08FD58279D9E05004A5FD6 /* AppDelegate.swift in Sources */,
+				5F4B63BC27A13AB600B42B75 /* PreviewView.swift in Sources */,
+				5F4B63D727A19A5B00B42B75 /* CompleteView.swift in Sources */,
 				5F08FD5C279D9E05004A5FD6 /* Experience.rcproject in Sources */,
+				5F4B63C427A151BB00B42B75 /* ARMarkerStore.swift in Sources */,
+				5F08FD75279DAE53004A5FD6 /* EditView.swift in Sources */,
+				5F08FD77279DB194004A5FD6 /* DrawPoints.swift in Sources */,
+				5FB358A227A1176300E75F6E /* PrinterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,13 +513,16 @@
 				DEVELOPMENT_TEAM = R93U8YH7X4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = ARGift/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"ARのためにカメラを使用してもいいですか？\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,13 +547,16 @@
 				DEVELOPMENT_TEAM = R93U8YH7X4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = ARGift/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"ARのためにカメラを使用してもいいですか？\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,6 +592,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F4B63AD27A12D8700B42B75 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F4B63AE27A12D8700B42B75 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F4B63AD27A12D8700B42B75 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		5F4B63B027A12D8700B42B75 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F4B63AD27A12D8700B42B75 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F08FD4C279D9E05004A5FD6 /* Project object */;
 }
