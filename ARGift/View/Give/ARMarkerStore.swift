@@ -13,6 +13,7 @@ final class ARMarkerStore: ObservableObject {
     @Published var selectedImages: [String] = ["", "", ""]
     @Published var selectedObjects: [String] = ["", "", ""]
     @Published var selectedObjectImages: [String] = ["", "", ""]
+    @Published var pass: Int = 0
     
     func imageSelect(number1: Int, number2: Int, number3: Int) {
         selectedImages[0] = arMarker[number1]
@@ -26,13 +27,17 @@ final class ARMarkerStore: ObservableObject {
         selectedObjects[2] = usdz[number3].objectUrl
     }
     
+    func createPass() {
+        pass = Int.random(in: 1000 ..< 9999)
+    }
+    
     func register() {
         do {
             let dataBase: [DataBase] = [.init(), .init(), .init()]
             for index in 0..<3 {
-                dataBase[index].imageUrl = selectedImages[index]
+                dataBase[index].imageUrl = selectedImages[index] + "_ar"
                 dataBase[index].usdzUrl = selectedObjects[index]
-                dataBase[index].number = index
+                dataBase[index].number = pass
             }
             let realm = try Realm()
             print("file: \(Realm.Configuration.defaultConfiguration.fileURL!)")

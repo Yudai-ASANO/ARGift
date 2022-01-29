@@ -18,8 +18,11 @@
 		5F08FD6F279DA113004A5FD6 /* SelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD6E279DA113004A5FD6 /* SelectViewModel.swift */; };
 		5F08FD73279DAAE5004A5FD6 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD72279DAAE5004A5FD6 /* Activity.swift */; };
 		5F08FD75279DAE53004A5FD6 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD74279DAE53004A5FD6 /* EditView.swift */; };
-		5F08FD77279DB194004A5FD6 /* DrawPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD76279DB194004A5FD6 /* DrawPoints.swift */; };
-		5F08FD79279DB1E0004A5FD6 /* DrawPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD78279DB1E0004A5FD6 /* DrawPathView.swift */; };
+		5F34479427A4F3B300521F5B /* OpenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34479327A4F3B300521F5B /* OpenView.swift */; };
+		5F34479627A4F3C200521F5B /* OpenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34479527A4F3C200521F5B /* OpenViewModel.swift */; };
+		5F34479827A4F7EF00521F5B /* TakeMarkerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34479727A4F7EF00521F5B /* TakeMarkerStore.swift */; };
+		5F34479B27A5041D00521F5B /* ARContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34479A27A5041D00521F5B /* ARContentsViewController.swift */; };
+		5F34479E27A50C6300521F5B /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5F34479D27A50C6300521F5B /* PinLayout */; };
 		5F4B63A727A127B600B42B75 /* AuthentiacationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63A627A127B600B42B75 /* AuthentiacationView.swift */; };
 		5F4B63AA27A1286D00B42B75 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63A927A1286D00B42B75 /* AuthenticationViewModel.swift */; };
 		5F4B63AC27A128CE00B42B75 /* OrangeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63AB27A128CE00B42B75 /* OrangeButton.swift */; };
@@ -57,8 +60,10 @@
 		5F08FD6E279DA113004A5FD6 /* SelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewModel.swift; sourceTree = "<group>"; };
 		5F08FD72279DAAE5004A5FD6 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5F08FD74279DAE53004A5FD6 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
-		5F08FD76279DB194004A5FD6 /* DrawPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPoints.swift; sourceTree = "<group>"; };
-		5F08FD78279DB1E0004A5FD6 /* DrawPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPathView.swift; sourceTree = "<group>"; };
+		5F34479327A4F3B300521F5B /* OpenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenView.swift; sourceTree = "<group>"; };
+		5F34479527A4F3C200521F5B /* OpenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenViewModel.swift; sourceTree = "<group>"; };
+		5F34479727A4F7EF00521F5B /* TakeMarkerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeMarkerStore.swift; sourceTree = "<group>"; };
+		5F34479A27A5041D00521F5B /* ARContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARContentsViewController.swift; sourceTree = "<group>"; };
 		5F4B63A627A127B600B42B75 /* AuthentiacationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentiacationView.swift; sourceTree = "<group>"; };
 		5F4B63A927A1286D00B42B75 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		5F4B63AB27A128CE00B42B75 /* OrangeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeButton.swift; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F34479E27A50C6300521F5B /* PinLayout in Frameworks */,
 				5F4B63B127A12D8700B42B75 /* RealmSwift in Frameworks */,
 				5F4B63AF27A12D8700B42B75 /* Realm in Frameworks */,
 			);
@@ -99,8 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				5FB3589C27A111B700E75F6E /* Color.xcassets */,
-				5F08FD78279DB1E0004A5FD6 /* DrawPathView.swift */,
-				5F08FD76279DB194004A5FD6 /* DrawPoints.swift */,
 				5F08FD56279D9E05004A5FD6 /* ARGift */,
 				5F08FD55279D9E05004A5FD6 /* Products */,
 			);
@@ -146,6 +150,34 @@
 				5F08FD6E279DA113004A5FD6 /* SelectViewModel.swift */,
 			);
 			path = Select;
+			sourceTree = "<group>";
+		};
+		5F34479127A4F37C00521F5B /* Take */ = {
+			isa = PBXGroup;
+			children = (
+				5F34479927A5040400521F5B /* ARView */,
+				5F34479227A4F38E00521F5B /* Open */,
+				5F4B63A827A1285000B42B75 /* Authentication */,
+				5F34479727A4F7EF00521F5B /* TakeMarkerStore.swift */,
+			);
+			path = Take;
+			sourceTree = "<group>";
+		};
+		5F34479227A4F38E00521F5B /* Open */ = {
+			isa = PBXGroup;
+			children = (
+				5F34479327A4F3B300521F5B /* OpenView.swift */,
+				5F34479527A4F3C200521F5B /* OpenViewModel.swift */,
+			);
+			path = Open;
+			sourceTree = "<group>";
+		};
+		5F34479927A5040400521F5B /* ARView */ = {
+			isa = PBXGroup;
+			children = (
+				5F34479A27A5041D00521F5B /* ARContentsViewController.swift */,
+			);
+			path = ARView;
 			sourceTree = "<group>";
 		};
 		5F4B63A827A1285000B42B75 /* Authentication */ = {
@@ -243,7 +275,6 @@
 				5F4B63D127A1997F00B42B75 /* Register */,
 				5F4B63D027A1997200B42B75 /* Printer */,
 				5F4B63C527A158DB00B42B75 /* Edit */,
-				5F4B63A827A1285000B42B75 /* Authentication */,
 				5F08FD6B279DA082004A5FD6 /* Select */,
 				5F4B63C327A151BB00B42B75 /* ARMarkerStore.swift */,
 			);
@@ -267,6 +298,7 @@
 				5FB3589E27A1126C00E75F6E /* Components */,
 				5F4B63CF27A1996900B42B75 /* Home */,
 				5F4B63D827A19BA600B42B75 /* Give */,
+				5F34479127A4F37C00521F5B /* Take */,
 				5F4B63D927A19D0E00B42B75 /* TransitionManager.swift */,
 			);
 			path = View;
@@ -291,6 +323,7 @@
 			packageProductDependencies = (
 				5F4B63AE27A12D8700B42B75 /* Realm */,
 				5F4B63B027A12D8700B42B75 /* RealmSwift */,
+				5F34479D27A50C6300521F5B /* PinLayout */,
 			);
 			productName = ARGift;
 			productReference = 5F08FD54279D9E05004A5FD6 /* ARGift.app */;
@@ -322,6 +355,7 @@
 			mainGroup = 5F08FD4B279D9E05004A5FD6;
 			packageReferences = (
 				5F4B63AD27A12D8700B42B75 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				5F34479C27A50C6300521F5B /* XCRemoteSwiftPackageReference "PinLayout" */,
 			);
 			productRefGroup = 5F08FD55279D9E05004A5FD6 /* Products */;
 			projectDirPath = "";
@@ -358,13 +392,15 @@
 				5F4B63C227A1453C00B42B75 /* DataBase.swift in Sources */,
 				5F4B63CE27A1952700B42B75 /* RegistView.swift in Sources */,
 				5F4B63A727A127B600B42B75 /* AuthentiacationView.swift in Sources */,
+				5F34479827A4F7EF00521F5B /* TakeMarkerStore.swift in Sources */,
+				5F34479B27A5041D00521F5B /* ARContentsViewController.swift in Sources */,
+				5F34479627A4F3C200521F5B /* OpenViewModel.swift in Sources */,
 				5F4B63BE27A13DAA00B42B75 /* PinkButtonSmall.swift in Sources */,
 				5F08FD6A279D9F2C004A5FD6 /* SelectView.swift in Sources */,
 				5F08FD5A279D9E05004A5FD6 /* ContentView.swift in Sources */,
 				5F08FD6D279DA0F5004A5FD6 /* Markerlmage.swift in Sources */,
 				5FB358A027A1129A00E75F6E /* PinkButton.swift in Sources */,
 				5F4B63AC27A128CE00B42B75 /* OrangeButton.swift in Sources */,
-				5F08FD79279DB1E0004A5FD6 /* DrawPathView.swift in Sources */,
 				5F4B63AA27A1286D00B42B75 /* AuthenticationViewModel.swift in Sources */,
 				5F4B63CC27A16B2500B42B75 /* PreviewViewController.swift in Sources */,
 				5F08FD68279D9EC9004A5FD6 /* HomeView.swift in Sources */,
@@ -373,12 +409,12 @@
 				5F4B63DA27A19D0E00B42B75 /* TransitionManager.swift in Sources */,
 				5F4B63D427A199BF00B42B75 /* MarkerView.swift in Sources */,
 				5F08FD58279D9E05004A5FD6 /* AppDelegate.swift in Sources */,
+				5F34479427A4F3B300521F5B /* OpenView.swift in Sources */,
 				5F4B63BC27A13AB600B42B75 /* PreviewView.swift in Sources */,
 				5F4B63D727A19A5B00B42B75 /* CompleteView.swift in Sources */,
 				5F08FD5C279D9E05004A5FD6 /* Experience.rcproject in Sources */,
 				5F4B63C427A151BB00B42B75 /* ARMarkerStore.swift in Sources */,
 				5F08FD75279DAE53004A5FD6 /* EditView.swift in Sources */,
-				5F08FD77279DB194004A5FD6 /* DrawPoints.swift in Sources */,
 				5FB358A227A1176300E75F6E /* PrinterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +630,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5F34479C27A50C6300521F5B /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		5F4B63AD27A12D8700B42B75 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
@@ -605,6 +649,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5F34479D27A50C6300521F5B /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F34479C27A50C6300521F5B /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
 		5F4B63AE27A12D8700B42B75 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5F4B63AD27A12D8700B42B75 /* XCRemoteSwiftPackageReference "realm-swift" */;

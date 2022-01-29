@@ -10,6 +10,7 @@ import SwiftUI
 import Combine
 import QuickLook
 import ARKit
+import PinLayout
 
 struct PreviewWrapper: UIViewControllerRepresentable {
     typealias UIViewControllerType = PreviewViewController
@@ -47,19 +48,16 @@ final class PreviewViewController: UIViewController {
         setRoute()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        contentViewController.view.pin.all()
+    }
+    
     private func setViewHierarchy() {
         contentViewController = UIHostingController(rootView: PreviewView(viewModel: viewModel))
         addChild(contentViewController)
         contentViewController.didMove(toParent: self)
         view.addSubview(contentViewController.view)
-        contentViewController.view.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            contentViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            contentViewController.view.topAnchor.constraint(equalTo: view.topAnchor),
-            contentViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            contentViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-        ])
-        
     }
     
     private func setRoute() {

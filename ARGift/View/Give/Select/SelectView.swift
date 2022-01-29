@@ -8,45 +8,43 @@
 import SwiftUI
 
 struct SelectView: View {
-    private let hSpacing: CGFloat = 26.0
-    private let vSpacing: CGFloat = 26.0
+    private let hSpacing: CGFloat = 20.0
+    private let vSpacing: CGFloat = 20.0
     @State private var isPresented: Bool = false
     @StateObject var viewModel: SelectViewModel = .init()
     @StateObject var store: ARMarkerStore = .init()
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                LazyVStack(alignment: .center, spacing: vSpacing) {
-                    HStack(alignment: .center, spacing: hSpacing) {
-                        Markerlmage(imageUrl: arMarker[0], isSelected: $viewModel.didSelectAt[0])
-                        Markerlmage(imageUrl: arMarker[1], isSelected: $viewModel.didSelectAt[1])
-                    }
-                    
-                    HStack(alignment: .center, spacing: hSpacing) {
-                        Markerlmage(imageUrl: arMarker[2], isSelected: $viewModel.didSelectAt[2])
-                        Markerlmage(imageUrl: arMarker[3], isSelected: $viewModel.didSelectAt[3])
-                    }
-                    
-                    HStack(alignment: .center, spacing: hSpacing) {
-                        Markerlmage(imageUrl: arMarker[4], isSelected: $viewModel.didSelectAt[4])
-                        Markerlmage(imageUrl: arMarker[5], isSelected: $viewModel.didSelectAt[5])
-                    }
-                    
-                    PinkButton(title: "OK", disabled: viewModel.validation(), action: {
-                        guard let selected = viewModel.selectedNumber() else { return }
-                        store.imageSelect(number1: selected.0, number2: selected.1, number3: selected.2)
-                        print("debug: \(selected)")
-                        isPresented = true
-                    })
-                    .padding(.vertical, 40)
-                    
-                    NavigationLink("", isActive: $isPresented) {
-                        PrinterView(store: store)
-                    }
+            VStack(alignment: .center, spacing: vSpacing) {
+                HStack(alignment: .center, spacing: hSpacing) {
+                    Markerlmage(imageUrl: arMarker[0], isSelected: $viewModel.didSelectAt[0])
+                    Markerlmage(imageUrl: arMarker[1], isSelected: $viewModel.didSelectAt[1])
                 }
-                .padding(.vertical)
+                
+                HStack(alignment: .center, spacing: hSpacing) {
+                    Markerlmage(imageUrl: arMarker[2], isSelected: $viewModel.didSelectAt[2])
+                    Markerlmage(imageUrl: arMarker[3], isSelected: $viewModel.didSelectAt[3])
+                }
+                
+                HStack(alignment: .center, spacing: hSpacing) {
+                    Markerlmage(imageUrl: arMarker[4], isSelected: $viewModel.didSelectAt[4])
+                    Markerlmage(imageUrl: arMarker[5], isSelected: $viewModel.didSelectAt[5])
+                }
+                
+                PinkButton(title: "OK", disabled: viewModel.validation(), action: {
+                    guard let selected = viewModel.selectedNumber() else { return }
+                    store.imageSelect(number1: selected.0, number2: selected.1, number3: selected.2)
+                    print("debug: \(selected)")
+                    isPresented = true
+                })
+                .padding(.vertical, vSpacing + 5)
+                
+                NavigationLink("", isActive: $isPresented) {
+                    PrinterView(store: store)
+                }
             }
+            .padding(.top, 4 * vSpacing)
             .navigationTitle("マーカーを選択")
         }
     }

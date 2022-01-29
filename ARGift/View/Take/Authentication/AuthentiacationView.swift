@@ -15,13 +15,15 @@ struct AuthentiacationView: View {
             VStack(alignment: .center, spacing: 0) {
                 Spacer()
                 TextField("password", text: $viewModel.password)
+                    .textFieldStyle(.roundedBorder)
+                    .keyboardType(.numberPad)
                     .padding()
                 Spacer()
                 OrangeButton(title: "OK", disabled: viewModel.password.isEmpty) {
                     isActive = true
                 }
                 NavigationLink("", isActive: $isActive) {
-                    Text("next")
+                    OpenView(pass: Int(viewModel.password) ?? 0)
                 }
             }
             .navigationTitle("パスワードを入力")

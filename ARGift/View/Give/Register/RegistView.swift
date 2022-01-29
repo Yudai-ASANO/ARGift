@@ -16,6 +16,7 @@ struct RegistView: View {
                 cell(index: 0)
                 cell(index: 1)
                 cell(index: 2)
+                Text("pass: \(store.pass)")
                 
                 PinkButton(title: "OK") {
                     store.register()
@@ -30,6 +31,9 @@ struct RegistView: View {
         }
         .navigationTitle("これでいいですか？")
         .padding(.top, 20)
+        .onAppear {
+            store.createPass()
+        }
     }
     
     @ViewBuilder

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import RealmSwift
 
-public var arMarker: [String] = ["150x150", "150x150", "150x150", "150x150", "150x150", "150x150"]
+public var arMarker: [String] = ["bear", "flowers", "presentforyou", "150x150", "150x150", "150x150"]
 public var usdzObject: [String] = ["LemonMeringuePie", "toy_biplane", "toy_drummer", "tv_retro"]
 public var usdz: [USDZFile] = [
     USDZFile.init(image: "150x200", object: "LemonMeringuePie"),
