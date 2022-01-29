@@ -18,18 +18,18 @@ struct SelectView: View {
         NavigationView {
             VStack(alignment: .center, spacing: vSpacing) {
                 HStack(alignment: .center, spacing: hSpacing) {
-                    Markerlmage(imageUrl: arMarker[0], isSelected: $viewModel.didSelectAt[0])
-                    Markerlmage(imageUrl: arMarker[1], isSelected: $viewModel.didSelectAt[1])
+                    Markerlmage(imageUrl: arMarker[0].imageUrl, isSelected: $viewModel.didSelectAt[0])
+                    Markerlmage(imageUrl: arMarker[1].imageUrl, isSelected: $viewModel.didSelectAt[1])
                 }
                 
                 HStack(alignment: .center, spacing: hSpacing) {
-                    Markerlmage(imageUrl: arMarker[2], isSelected: $viewModel.didSelectAt[2])
-                    Markerlmage(imageUrl: arMarker[3], isSelected: $viewModel.didSelectAt[3])
+                    Markerlmage(imageUrl: arMarker[2].imageUrl, isSelected: $viewModel.didSelectAt[2])
+                    Markerlmage(imageUrl: arMarker[3].imageUrl, isSelected: $viewModel.didSelectAt[3])
                 }
                 
                 HStack(alignment: .center, spacing: hSpacing) {
-                    Markerlmage(imageUrl: arMarker[4], isSelected: $viewModel.didSelectAt[4])
-                    Markerlmage(imageUrl: arMarker[5], isSelected: $viewModel.didSelectAt[5])
+                    Markerlmage(imageUrl: arMarker[4].imageUrl, isSelected: $viewModel.didSelectAt[4])
+                    Markerlmage(imageUrl: arMarker[5].imageUrl, isSelected: $viewModel.didSelectAt[5])
                 }
                 
                 PinkButton(title: "OK", disabled: viewModel.validation(), action: {

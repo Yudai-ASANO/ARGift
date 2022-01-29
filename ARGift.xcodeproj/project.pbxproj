@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5F08FD58279D9E05004A5FD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD57279D9E05004A5FD6 /* AppDelegate.swift */; };
-		5F08FD5A279D9E05004A5FD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD59279D9E05004A5FD6 /* ContentView.swift */; };
-		5F08FD5C279D9E05004A5FD6 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD5B279D9E05004A5FD6 /* Experience.rcproject */; };
 		5F08FD5E279D9E06004A5FD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F08FD5D279D9E06004A5FD6 /* Assets.xcassets */; };
 		5F08FD61279D9E06004A5FD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F08FD60279D9E06004A5FD6 /* Preview Assets.xcassets */; };
 		5F08FD68279D9EC9004A5FD6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08FD67279D9EC9004A5FD6 /* HomeView.swift */; };
@@ -23,6 +21,9 @@
 		5F34479827A4F7EF00521F5B /* TakeMarkerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34479727A4F7EF00521F5B /* TakeMarkerStore.swift */; };
 		5F34479B27A5041D00521F5B /* ARContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34479A27A5041D00521F5B /* ARContentsViewController.swift */; };
 		5F34479E27A50C6300521F5B /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5F34479D27A50C6300521F5B /* PinLayout */; };
+		5F3447A027A5AD6400521F5B /* FindMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34479F27A5AD6400521F5B /* FindMarkerView.swift */; };
+		5F3447A327A5B33A00521F5B /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3447A227A5B33A00521F5B /* MessageView.swift */; };
+		5F3447A627A5BF8C00521F5B /* FinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3447A527A5BF8C00521F5B /* FinishView.swift */; };
 		5F4B63A727A127B600B42B75 /* AuthentiacationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63A627A127B600B42B75 /* AuthentiacationView.swift */; };
 		5F4B63AA27A1286D00B42B75 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63A927A1286D00B42B75 /* AuthenticationViewModel.swift */; };
 		5F4B63AC27A128CE00B42B75 /* OrangeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B63AB27A128CE00B42B75 /* OrangeButton.swift */; };
@@ -50,8 +51,6 @@
 /* Begin PBXFileReference section */
 		5F08FD54279D9E05004A5FD6 /* ARGift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARGift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F08FD57279D9E05004A5FD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F08FD59279D9E05004A5FD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5F08FD5B279D9E05004A5FD6 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		5F08FD5D279D9E06004A5FD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F08FD60279D9E06004A5FD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F08FD67279D9EC9004A5FD6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -64,6 +63,9 @@
 		5F34479527A4F3C200521F5B /* OpenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenViewModel.swift; sourceTree = "<group>"; };
 		5F34479727A4F7EF00521F5B /* TakeMarkerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeMarkerStore.swift; sourceTree = "<group>"; };
 		5F34479A27A5041D00521F5B /* ARContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARContentsViewController.swift; sourceTree = "<group>"; };
+		5F34479F27A5AD6400521F5B /* FindMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMarkerView.swift; sourceTree = "<group>"; };
+		5F3447A227A5B33A00521F5B /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		5F3447A527A5BF8C00521F5B /* FinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishView.swift; sourceTree = "<group>"; };
 		5F4B63A627A127B600B42B75 /* AuthentiacationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentiacationView.swift; sourceTree = "<group>"; };
 		5F4B63A927A1286D00B42B75 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		5F4B63AB27A128CE00B42B75 /* OrangeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeButton.swift; sourceTree = "<group>"; };
@@ -104,7 +106,6 @@
 		5F08FD4B279D9E05004A5FD6 = {
 			isa = PBXGroup;
 			children = (
-				5FB3589C27A111B700E75F6E /* Color.xcassets */,
 				5F08FD56279D9E05004A5FD6 /* ARGift */,
 				5F08FD55279D9E05004A5FD6 /* Products */,
 			);
@@ -121,14 +122,13 @@
 		5F08FD56279D9E05004A5FD6 /* ARGift */ = {
 			isa = PBXGroup;
 			children = (
+				5FB3589C27A111B700E75F6E /* Color.xcassets */,
+				5F08FD5D279D9E06004A5FD6 /* Assets.xcassets */,
 				5F4B63C827A15D3300B42B75 /* Info.plist */,
+				5F08FD57279D9E05004A5FD6 /* AppDelegate.swift */,
 				5F4B63C027A1452100B42B75 /* DataBase */,
 				5F4B63B227A12EF700B42B75 /* USDZ */,
 				5FB358A327A125AD00E75F6E /* View */,
-				5F08FD57279D9E05004A5FD6 /* AppDelegate.swift */,
-				5F08FD59279D9E05004A5FD6 /* ContentView.swift */,
-				5F08FD5B279D9E05004A5FD6 /* Experience.rcproject */,
-				5F08FD5D279D9E06004A5FD6 /* Assets.xcassets */,
 				5F08FD5F279D9E06004A5FD6 /* Preview Content */,
 			);
 			path = ARGift;
@@ -155,6 +155,8 @@
 		5F34479127A4F37C00521F5B /* Take */ = {
 			isa = PBXGroup;
 			children = (
+				5F3447A427A5BF4C00521F5B /* Finish */,
+				5F3447A127A5B32700521F5B /* MessageView */,
 				5F34479927A5040400521F5B /* ARView */,
 				5F34479227A4F38E00521F5B /* Open */,
 				5F4B63A827A1285000B42B75 /* Authentication */,
@@ -176,8 +178,25 @@
 			isa = PBXGroup;
 			children = (
 				5F34479A27A5041D00521F5B /* ARContentsViewController.swift */,
+				5F34479F27A5AD6400521F5B /* FindMarkerView.swift */,
 			);
 			path = ARView;
+			sourceTree = "<group>";
+		};
+		5F3447A127A5B32700521F5B /* MessageView */ = {
+			isa = PBXGroup;
+			children = (
+				5F3447A227A5B33A00521F5B /* MessageView.swift */,
+			);
+			path = MessageView;
+			sourceTree = "<group>";
+		};
+		5F3447A427A5BF4C00521F5B /* Finish */ = {
+			isa = PBXGroup;
+			children = (
+				5F3447A527A5BF8C00521F5B /* FinishView.swift */,
+			);
+			path = Finish;
 			sourceTree = "<group>";
 		};
 		5F4B63A827A1285000B42B75 /* Authentication */ = {
@@ -392,12 +411,12 @@
 				5F4B63C227A1453C00B42B75 /* DataBase.swift in Sources */,
 				5F4B63CE27A1952700B42B75 /* RegistView.swift in Sources */,
 				5F4B63A727A127B600B42B75 /* AuthentiacationView.swift in Sources */,
+				5F3447A027A5AD6400521F5B /* FindMarkerView.swift in Sources */,
 				5F34479827A4F7EF00521F5B /* TakeMarkerStore.swift in Sources */,
 				5F34479B27A5041D00521F5B /* ARContentsViewController.swift in Sources */,
 				5F34479627A4F3C200521F5B /* OpenViewModel.swift in Sources */,
 				5F4B63BE27A13DAA00B42B75 /* PinkButtonSmall.swift in Sources */,
 				5F08FD6A279D9F2C004A5FD6 /* SelectView.swift in Sources */,
-				5F08FD5A279D9E05004A5FD6 /* ContentView.swift in Sources */,
 				5F08FD6D279DA0F5004A5FD6 /* Markerlmage.swift in Sources */,
 				5FB358A027A1129A00E75F6E /* PinkButton.swift in Sources */,
 				5F4B63AC27A128CE00B42B75 /* OrangeButton.swift in Sources */,
@@ -405,14 +424,15 @@
 				5F4B63CC27A16B2500B42B75 /* PreviewViewController.swift in Sources */,
 				5F08FD68279D9EC9004A5FD6 /* HomeView.swift in Sources */,
 				5F08FD6F279DA113004A5FD6 /* SelectViewModel.swift in Sources */,
+				5F3447A627A5BF8C00521F5B /* FinishView.swift in Sources */,
 				5F08FD73279DAAE5004A5FD6 /* Activity.swift in Sources */,
 				5F4B63DA27A19D0E00B42B75 /* TransitionManager.swift in Sources */,
 				5F4B63D427A199BF00B42B75 /* MarkerView.swift in Sources */,
 				5F08FD58279D9E05004A5FD6 /* AppDelegate.swift in Sources */,
 				5F34479427A4F3B300521F5B /* OpenView.swift in Sources */,
 				5F4B63BC27A13AB600B42B75 /* PreviewView.swift in Sources */,
+				5F3447A327A5B33A00521F5B /* MessageView.swift in Sources */,
 				5F4B63D727A19A5B00B42B75 /* CompleteView.swift in Sources */,
-				5F08FD5C279D9E05004A5FD6 /* Experience.rcproject in Sources */,
 				5F4B63C427A151BB00B42B75 /* ARMarkerStore.swift in Sources */,
 				5F08FD75279DAE53004A5FD6 /* EditView.swift in Sources */,
 				5FB358A227A1176300E75F6E /* PrinterView.swift in Sources */,

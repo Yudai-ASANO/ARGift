@@ -11,14 +11,18 @@ import RealmSwift
 
 final class ARMarkerStore: ObservableObject {
     @Published var selectedImages: [String] = ["", "", ""]
+    @Published var selectedImagesResources: [String] = ["", "", ""]
     @Published var selectedObjects: [String] = ["", "", ""]
     @Published var selectedObjectImages: [String] = ["", "", ""]
     @Published var pass: Int = 0
     
     func imageSelect(number1: Int, number2: Int, number3: Int) {
-        selectedImages[0] = arMarker[number1]
-        selectedImages[1] = arMarker[number2]
-        selectedImages[2] = arMarker[number3]
+        selectedImages[0] = arMarker[number1].imageUrl
+        selectedImagesResources[0] = arMarker[number1].resource
+        selectedImages[1] = arMarker[number2].imageUrl
+        selectedImagesResources[1] = arMarker[number2].resource
+        selectedImages[2] = arMarker[number3].imageUrl
+        selectedImagesResources[2] = arMarker[number3].resource
     }
     
     func objectSelect(number1: Int, number2: Int, number3: Int) {
@@ -35,7 +39,8 @@ final class ARMarkerStore: ObservableObject {
         do {
             let dataBase: [DataBase] = [.init(), .init(), .init()]
             for index in 0..<3 {
-                dataBase[index].imageUrl = selectedImages[index] + "_ar"
+                dataBase[index].imageResource = selectedImagesResources[index]
+                dataBase[index].imageUrl = selectedImages[index]
                 dataBase[index].usdzUrl = selectedObjects[index]
                 dataBase[index].number = pass
             }

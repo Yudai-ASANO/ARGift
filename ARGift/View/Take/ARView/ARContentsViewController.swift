@@ -31,7 +31,7 @@ final class ARContentsViewController: UIViewController {
     
     struct Attribute {
         var order: Int  // 何番目のマーカーか
-        var imageUrl: String // マーカーの画像URL
+        var resource: String // マーカーの画像URL
         var objectUrl: String // 表示するUSDZのURL
     }
     
@@ -48,8 +48,7 @@ final class ARContentsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        arConfiguration(groupName: "AR Resources")
-        setNavBar(order: attribute.order)
+        arConfiguration(groupName: attribute.resource)
     }
     
     override func viewWillLayoutSubviews() {
@@ -65,10 +64,6 @@ final class ARContentsViewController: UIViewController {
         configuration.trackingImages = ARReferenceImage.referenceImages(inGroupNamed: groupName, bundle: nil)!
         sceneView.session.run(configuration)
         view.addSubview(sceneView)
-    }
-    
-    private func setNavBar(order: Int) {
-        navigationItem.title = "\(order)つ目のマーカー"
     }
 }
 

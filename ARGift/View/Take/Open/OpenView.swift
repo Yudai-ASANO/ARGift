@@ -11,6 +11,7 @@ struct OpenView: View {
     var pass: Int
     @State private var isActive: Bool = false
     @StateObject private var viewModel: OpenViewModel = .init()
+    @StateObject private var store: TakeMarkerStore = .init()
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
             Spacer()
@@ -23,12 +24,13 @@ struct OpenView: View {
                 )
             Spacer()
             PinkButton(title: "OPEN", action: {
+                store.data = viewModel.data
                 isActive = true
             })
             .padding(.bottom, 60)
             
             NavigationLink("", isActive: $isActive) {
-//                ARContentsViewContainer(attribute: .init(order: 1, imageUrl: , objectUrl: <#T##String#>))
+                FindMarkerView(index: 0, store: store)
             }
         }
         .navigationTitle("プレゼントです！")

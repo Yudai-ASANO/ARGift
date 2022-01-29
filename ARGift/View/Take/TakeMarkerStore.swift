@@ -8,8 +8,6 @@
 import SwiftUI
 
 final class TakeMarkerStore: ObservableObject {
-    @Published var selectedImages: [String] = ["", "", ""]
-    @Published var selectedObjects: [String] = ["", "", ""]
-    @Published var selectedObjectImages: [String] = ["", "", ""]
+    @Published var data: [DataBase] = []
     @Published var pass: Int = 0
 }
