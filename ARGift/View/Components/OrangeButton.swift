@@ -35,19 +35,19 @@ struct OrangeButton: View {
             .cornerRadius(9)
         }
         .disabled(disabled)
-        .buttonStyle(OrangeButtonStyle(isEnabled: disabled))
+        .buttonStyle(OrangeButtonStyle(disabled: disabled))
     }
 }
 
 struct OrangeButtonStyle: ButtonStyle {
-    var isEnabled: Bool
+    var disabled: Bool
     func makeBody(configuration: Configuration) -> some View {
-        if isEnabled {
+        if disabled {
             configuration.label
                 .opacity(0.4)
         } else {
             configuration.label
-                .opacity(1.0)
+                .opacity(configuration.isPressed ? 0.6 : 1.0)
                 .shadow(
                     color: Color("#greishBrown").opacity(0.75),
                     radius: 6,

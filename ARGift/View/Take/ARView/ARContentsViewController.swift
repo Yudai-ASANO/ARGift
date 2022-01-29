@@ -46,8 +46,13 @@ final class ARContentsViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        print("DEBUG")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("DEBUG: \(attribute)")
         arConfiguration(groupName: attribute.resource)
     }
     
@@ -71,8 +76,13 @@ extension ARContentsViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         do {
             let url = Bundle.main.url(forResource: attribute.objectUrl, withExtension: "usdz")!
-            let scene = try SCNScene(url: url, options: [.checkConsistency: true])
-            node.addChildNode(scene.rootNode)
+            let scene = try SCNScene(url: url)
+            let modelNode: SCNNode = .init()
+            for childNode in scene.rootNode.childNodes {
+                modelNode.addChildNode(childNode)
+            }
+            node.addChildNode(modelNode)
+            print("DEBUG: \(node.childNodes.debugDescription)")
         } catch {
             print(error)
         }
