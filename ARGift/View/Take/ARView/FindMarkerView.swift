@@ -13,9 +13,9 @@ struct FindMarkerView: View {
     @State private var isActive: Bool = false
     var body: some View {
         ZStack(alignment: .top) {
-            ARContentsViewContainer(attribute: .init(order: index, resource: store.data[index].imageResource, objectUrl: store.data[index].usdzUrl))
+            ARContentsViewContainer(attribute: .init(order: index, resource: store.data.imageResource, objectUrl: store.data.usdzUrl))
             HStack {
-                Image(store.data[index].imageUrl)
+                Image(store.data.imageUrl)
                     .resizable()
                     .frame(width: 110, height: 110, alignment: .center)
                     .cornerRadius(7)
@@ -26,14 +26,10 @@ struct FindMarkerView: View {
             
             VStack {
                 NavigationLink("", isActive: $isActive) {
-                    if index > 1 {
-                        MessageView()
-                    } else {
-                        FindMarkerView(index: index + 1, store: store)
-                    }
+                    MessageView()
                 }
                 Spacer()
-                OrangeButton(title: index > 1 ? "Present!" : "Next") {
+                OrangeButton(title: "Present!") {
                     isActive = true
                 }
                 .padding(60)

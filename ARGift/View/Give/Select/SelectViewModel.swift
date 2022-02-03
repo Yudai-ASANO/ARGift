@@ -18,24 +18,24 @@ final class SelectViewModel: ObservableObject {
                 trueCounter += 1
             }
         }
-        if trueCounter == 3 {
+        if trueCounter == 1 {
             return false
         }
         
         return true
     }
     
-    func selectedNumber() -> (Int, Int, Int)? {
+    func selectedNumber() -> Int? {
         var selected: [Int] = []
         didSelectAt.indices.forEach { index in
             if didSelectAt[index] {
                 selected.append(index)
             }
         }
-        if selected.count < 3 {
+        if selected.count != 1 {
             return nil
         } else {
-            return (selected[0], selected[1], selected[2])
+            return selected[0]
         }
     }
 }

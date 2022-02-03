@@ -34,7 +34,7 @@ struct SelectView: View {
                 
                 PinkButton(title: "OK", disabled: viewModel.validation(), action: {
                     guard let selected = viewModel.selectedNumber() else { return }
-                    store.imageSelect(number1: selected.0, number2: selected.1, number3: selected.2)
+                    store.imageSelect(number: selected)
                     print("debug: \(selected)")
                     isPresented = true
                 })

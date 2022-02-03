@@ -14,8 +14,7 @@ struct RegistView: View {
         ScrollView {
             LazyVStack(alignment: .center, spacing: 20) {
                 cell(index: 0)
-                cell(index: 1)
-                cell(index: 2)
+                
                 Text("pass: \(store.pass)")
                 
                 PinkButton(title: "OK") {
@@ -42,7 +41,7 @@ struct RegistView: View {
             Text("\(index + 1)")
                 .foregroundColor(Color("#darkMaroon"))
                 .font(.system(size: 42))
-            Image(store.selectedObjectImages[index])
+            Image(store.selectedObjectImages)
                 .resizable()
                 .frame(width: 116, height: 168, alignment: .center)
                 .cornerRadius(9)

@@ -19,8 +19,6 @@ struct EditView: View {
         } else {
             VStack(alignment: .center, spacing: 40) {
                 cell(index: 0)
-                cell(index: 1)
-                cell(index: 2)
                 
                 PinkButton(title: "OK", disabled: viewModel.validation()) {
                     store.selectedObjects = viewModel.objectUrls
@@ -45,7 +43,7 @@ struct EditView: View {
     @ViewBuilder
     private func cell(index: Int) -> some View {
         HStack(alignment: .center, spacing: 50) {
-            Markerlmage(imageUrl: store.selectedImages[index], width: 117, disabled: true, isSelected: $viewModel.didSelectAt[index])
+            Markerlmage(imageUrl: store.selectedImages, width: 117, disabled: true, isSelected: $viewModel.didSelectAt[index])
             VStack(alignment: .center, spacing: 20) {
                 Text("マーカーその\(index + 1)")
                 PinkButtonSmall(title: "編集") {

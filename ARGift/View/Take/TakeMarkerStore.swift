@@ -8,6 +8,6 @@
 import SwiftUI
 
 final class TakeMarkerStore: ObservableObject {
-    @Published var data: [DataBase] = []
+    @Published var data: DataBase = .init()
     @Published var pass: Int = 0
 }

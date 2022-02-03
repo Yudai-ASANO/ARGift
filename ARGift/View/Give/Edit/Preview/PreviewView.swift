@@ -42,8 +42,8 @@ struct PreviewView: View {
                     if let selected = selected {
                         print("debug: \(selected)")
                         viewModel.didSelectAt[viewModel.selectedCellIndex] = true
-                        viewModel.objectUrls[viewModel.selectedCellIndex] = usdz[selected].objectUrl
-                        viewModel.objectImageUrls[viewModel.selectedCellIndex] = usdz[selected].imageUrl
+                        viewModel.objectUrls = usdz[selected].objectUrl
+                        viewModel.objectImageUrls = usdz[selected].imageUrl
                         dismiss()
                     }
                 } label: {

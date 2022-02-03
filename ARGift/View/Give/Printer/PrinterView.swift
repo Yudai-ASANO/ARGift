@@ -40,9 +40,7 @@ struct PrinterView: View {
             // dismiss
         } content: {
             let shareImages: [UIImage?] = [
-                UIImage(named: store.selectedImages[0]),
-                UIImage(named: store.selectedImages[1]),
-                UIImage(named: store.selectedImages[2])
+                UIImage(named: store.selectedImages)
             ]
             Activity(items: shareImages)
         }

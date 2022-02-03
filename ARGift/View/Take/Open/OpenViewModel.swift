@@ -9,14 +9,15 @@ import SwiftUI
 import RealmSwift
 
 final class OpenViewModel: ObservableObject {
-    @Published var data: [DataBase] = []
+    @Published var data: DataBase = .init()
     
     func fetchData(pass: Int) {
         do {
             let realm = try Realm()
             let response = realm.objects(DataBase.self).filter("number == \(pass)")
-            guard response.count == 3 else { return }
-            data = Array(response)
+            print(response)
+            guard let data = response.first else { return }
+            self.data = data
             print(data)
         } catch {
             print(error)

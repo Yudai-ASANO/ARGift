@@ -10,8 +10,8 @@ import RealmSwift
 
 final class EditViewModel: ObservableObject {
     @Published var didSelectAt: [Bool] = [false, false, false]
-    @Published var objectUrls:[String] = ["", "", ""]
-    @Published var objectImageUrls: [String] = ["", "", ""]
+    @Published var objectUrls:String = ""
+    @Published var objectImageUrls: String = ""
     @Published var selectedCellIndex: Int = -1
     @Published var index: Int?
     
@@ -22,7 +22,7 @@ final class EditViewModel: ObservableObject {
                 trueCounter += 1
             }
         }
-        if trueCounter == 3 {
+        if trueCounter == 1 {
             return false
         }
         

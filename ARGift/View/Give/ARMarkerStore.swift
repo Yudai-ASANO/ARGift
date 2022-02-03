@@ -10,25 +10,19 @@ import SwiftUI
 import RealmSwift
 
 final class ARMarkerStore: ObservableObject {
-    @Published var selectedImages: [String] = ["", "", ""]
-    @Published var selectedImagesResources: [String] = ["", "", ""]
-    @Published var selectedObjects: [String] = ["", "", ""]
-    @Published var selectedObjectImages: [String] = ["", "", ""]
+    @Published var selectedImages: String = ""
+    @Published var selectedImagesResources: String = ""
+    @Published var selectedObjects: String = ""
+    @Published var selectedObjectImages: String = ""
     @Published var pass: Int = 0
     
-    func imageSelect(number1: Int, number2: Int, number3: Int) {
-        selectedImages[0] = arMarker[number1].imageUrl
-        selectedImagesResources[0] = arMarker[number1].resource
-        selectedImages[1] = arMarker[number2].imageUrl
-        selectedImagesResources[1] = arMarker[number2].resource
-        selectedImages[2] = arMarker[number3].imageUrl
-        selectedImagesResources[2] = arMarker[number3].resource
+    func imageSelect(number: Int) {
+        selectedImages = arMarker[number].imageUrl
+        selectedImagesResources = arMarker[number].resource
     }
     
-    func objectSelect(number1: Int, number2: Int, number3: Int) {
-        selectedObjects[0] = usdz[number1].objectUrl
-        selectedObjects[1] = usdz[number2].objectUrl
-        selectedObjects[2] = usdz[number3].objectUrl
+    func objectSelect(number: Int) {
+        selectedObjects = usdz[number].objectUrl
     }
     
     func createPass() {
@@ -37,19 +31,15 @@ final class ARMarkerStore: ObservableObject {
     
     func register() {
         do {
-            let dataBase: [DataBase] = [.init(), .init(), .init()]
-            for index in 0..<3 {
-                dataBase[index].imageResource = selectedImagesResources[index]
-                dataBase[index].imageUrl = selectedImages[index]
-                dataBase[index].usdzUrl = selectedObjects[index]
-                dataBase[index].number = pass
-            }
+            let dataBase: DataBase = .init()
+            dataBase.imageResource = selectedImagesResources
+            dataBase.imageUrl = selectedImages
+            dataBase.usdzUrl = selectedObjects
+            dataBase.number = pass
             let realm = try Realm()
             print("file: \(Realm.Configuration.defaultConfiguration.fileURL!)")
             try realm.write({
-                dataBase.forEach { data in
-                    realm.add(data)
-                }
+                realm.add(dataBase)
             })
             
         } catch {
